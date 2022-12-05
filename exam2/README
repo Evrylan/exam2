@@ -1,0 +1,199 @@
+Examination #2 IoT 22 Måndag 5 (9:15 - 11:45)
+==============================================
+
+Det finns 10 uppgifter.
+Fem godkända ger bettyg "G".
+Åtta ger betyg "VG".
+
+För att hämta alla uppgifter gör som följande:
+
+1) Skapa en mapp som heter "exam2" med kommando:
+
+   mkdir exam2
+
+2) Flytta dig i mappen "exam2" med kommando:
+
+   mv exam2
+
+3) Initialisera git med kommando:
+
+   git init
+
+4) Pull alla uppgifter från GitHub med kommando:
+
+   git pull https://github.com/PhyTeK/Exam2.git main
+
+5) Börja med att läsa filen README
+
+6) När du är klar med examinationen skriv följande kommando och Enter.
+
+   touch DONE
+
+7) Notera att några program måste kompileras med rätt namn.	
+
+Lycka till!
+
+Uppgift 1
+---------
+
+Skriv ett program som heter "u1" som deklarerar en funktion "fun1" som
+tar två heltal som argumenter och returnera summan av båda tal.
+
+Anropa funktionen "fun1" i main funktionen och skriv ut på skärmen
+summan av varje respectiva element av två listor "list1" och "list2".
+
+list1 = {2,4,6,8,10,12}
+list2 = {1,3,5,7, 9,11}
+
+OUTPUT
+
+3 7 11 15 19 23
+
+Uppgift 2
+---------
+
+Skriv ett program som heter "u2" som skriver ut alla ojämna tal från 1
+till och med 31 med hälp av en loop.
+
+OUTPUT
+
+1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31
+
+Uppgift 3
+---------
+
+Om i=-2 och j=-1, vad är värden av variabeln j efter följande rad?
+
+j -= ++i + ++i + j;
+
+Skriv ditt resultat i en fil som heter "u3".
+
+Du behöver inte kompilera koden.
+
+I filen "u3" ska det står BARA en siffra!
+
+Uppgift 4
+---------
+
+Skriv ett program "sum" som skriver ut summan av serien:
+
+n+(n-1)+(n-2)+ ... + 3 + 2 + 1
+
+där n är värdet som anger som första argument i terminal.
+
+INPUT: sum 100
+
+OUTPUT:
+
+100 + 99 + 98 + ... + 3 + 2 + 1 = 5050
+
+Uppgift 5
+---------
+
+Skriv ett program som heter "bank" som innehåler följande struktur "Bank".
+
+struct Bank{
+	char name[20];
+	int id;
+	float account;
+	float input;
+	float output;
+}
+
+Initialisera strukturen "Bank" med följande in data:
+
+Dennis 1024 120000.0  5000.0 -2500.0
+Richie 2048  95000.3  2500.5 -1220.0
+
+Skriv ut name, id, account, input, output och balance
+(balance=account+input-output) på skärmen som följande: (respektera
+avståndet mellan kolumnerna och horisontella raden ---)
+
+OUTPUT
+
+Name     id     account     input    output    balance
+------------------------------------------------------- 
+Dennis   1024   120000.0    5000.0   -2500.0   122500.0
+Richie   2048    95000.3    2500.5   -1220.0    96280.8
+
+
+Uppgift 6
+---------
+
+Skriv ett program som heter "mult" som skriver ut alla
+multiplikationer från 1 till 10 som följande:
+
+OUTPUT
+
+ 1  2  3  4  5  6  7  8  9 10 
+ 2  4  6  8 10 12 14 16 18 20 
+ 3  6  9 12 15 18 21 24 27 30 
+ 4  8 12 16 20 24 28 32 36 40 
+ 5 10 15 20 25 30 35 40 45 50 
+ 6 12 18 24 30 36 42 48 54 60 
+ 7 14 21 28 35 42 49 56 63 70 
+ 8 16 24 32 40 48 56 64 72 80 
+ 9 18 27 36 45 54 63 72 81 90 
+10 20 30 40 50 60 70 80 90 100 
+
+Uppgift 7
+---------
+
+Skriv ett program som heter "average" som declarerar och sedan
+definierar fyra variabler x, y, z och avg av typ double.
+
+Tilldela värden till x=1.23456, y=-3.14159 och z=1.90703.
+
+Beräkna medelvärdet av x, y och z och tilldela det till variabeln
+"avg".
+
+Slutligen, skriv ut på skärmen medelvärdet som följande: Notera att
+--.----- innebär två decimaler före punkten och 5 decimaler efter
+punkten.
+
+OUTPUT
+
+The average of x, y and z is: --.-----
+
+Uppgift 8
+---------
+
+Använder Gnu debuger GDB för att hitta raden i koden "wrong.c" som
+producerar "Segmentation fault" när du kör den kompilerade koden.
+
+Svara i en fil som heter "gdb". I filen "gdb" skriver du i första rad
+radnummer som du hitade med gdb och i nästa rad en kort förklaring
+varför du få en "segmentation fault" fel medelande.
+
+Innehålet av filen "gdb" ska vara:
+
+<radnummer>
+Förklaring ...
+
+Uppgift 9
+---------
+
+Skriv ett program som heter "truth" som skriver ut den
+sanningsvärdetabell (truth table) av följande Boolesk uttryck "U":
+
+U = a AND (a OR b)
+
+där a och b är två booleska variabel som kan bara vara "true" eller
+"false".
+
+Programmet "truth" ska kunna kompileras och ska skriv ut BARA
+sanningsvärdetabell i tre kolumner. Kolonnerna ska vara, i ordning;
+värden av a, b och uttrycket U.
+
+Uppgift 10
+----------
+
+En C-kod för en mikrokontroller behöver läsa signal av en
+temperatursensor. Signalen är ett tal mellan 0 och 255.
+
+Vilket typ är mest lämpligast för att deklarera en variabel "temp" som
+ska kunna ta alla väderna av temperatursensorn?
+
+Skriv ditt svar in en fil "temp" som innehåler bara en rad med
+datatypen som du har valt. Koden behöver inte kompileras!
+
